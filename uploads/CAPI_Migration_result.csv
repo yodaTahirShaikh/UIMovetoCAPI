@@ -1,0 +1,13 @@
+AppID,PhoneNumber,AppName,WabaId,PhoneId,status_code,Response
+4c1f6a66-0e72-410e-bf0c-e15c4ac7ad35,AutomaqNeumaticos,5952137997,208399599029346,218514354681307,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+350bd0a5-cca6-42b7-aac7-36b538f0bf93,ComfortHouse,5959933160,130307093304265,102708712791474,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+1595b655-0765-4095-ac49-f4c783a185e7,Copipunto,5952123767,454592978960113,461964201707733,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+29249556-95fa-495d-9fc8-00d8bee9f36c,GodsPan,595985670,114474028280437,117241594670216,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+3707432f-53e8-4a4e-a9c7-0056b5579e73,Reimpex,5959811484,100519986139487,107721465408180,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+d79f5a0d-f2b1-4c75-926f-f307672f915d,Rochester,595981408,102029472636301,108580101982828,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+bc2ff5a0-2035-43f2-9ef9-6f16c027a3af,SigoPy,59521200,103105925776982,103906009029649,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+99afe92e-d989-40fd-af6a-ff74e0d95e69,Suenolar,5952158881,108195568993763,105115449306958,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+20c74916-c32f-4f76-a050-2f69a3e2560f,SuenolarKoala,595215888,105222489293955,117548204716466,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+f932a376-88fd-4148-904c-7c74a408b8ff,Tenondete,595981296,102085376226076,122134247547856,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+79ba46d5-68fe-4f3a-bc86-18e239130a9c,TenondeteOficial,595974117,101837479650242,108567428973113,200,"{'message': 'App migrated successfully', 'status': 'success'}"
+4a112d02-d1f4-4016-a460-668205c41a08,TiendaGonzalito,595972289,112753188467308,100459859711945,200,"{'message': 'App migrated successfully', 'status': 'success'}"
