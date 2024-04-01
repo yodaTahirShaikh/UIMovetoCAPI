@@ -34,10 +34,11 @@ const uploadCsv = async (req, res) => {
             if (err) {
                 return res.status(500).send('Error saving file.');
             }
-            return res.send('File uploaded and saved successfully.');
+            // return res.send('File uploaded and saved successfully.');
         });
-        processData(ldap, false);
     });
+    await processData(ldap, false);
+    await processData(ldap, true);
 };
 
 module.exports = { upload, uploadCsv };
