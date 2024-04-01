@@ -44,8 +44,26 @@
         .form-group input[type="submit"]:hover {
             background-color: #0056b3;
         }
+
+        /* Progress bar styles */
+        .progress {
+            margin-top: 20px;
+            height: 20px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
     </style>
 </head>
+
+<!-- Socket IO -->
 
 <body>
     <div class="container">
@@ -60,6 +78,59 @@
             </div>
         </form>
     </div>
+    <div class="container">
+        <table id="progressTable">
+            <thead>
+                <tr>
+                    <th>Req no.</th>
+                    <th>FileName</th>
+                    <th>Progress</th>
+                    <th>ETA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="reqNo"></div>
+                    </td>
+                    <td>
+                        <div id="fileName"></div>
+                    </td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" id="progressBar" style="width: 0;"></div>
+                        </div>
+                    </td>
+                    <td id="eta">Calculating...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('files', (fileNames) => {
+            console.log('Received file names:', fileNames);
+            // You can update the UI or perform other actions here
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+
+        socket.on('error', (error) => {
+            console.error('WebSocket error:', error);
+        });
+
+        // Example: Sending a message to the server
+        socket.emit('getFiles');
+    </script>
+
 </body>
 
 </html>
